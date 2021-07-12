@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _wea
   \************************/
 /***/ ((module) => {
 
-eval("const APP_ID = \"2dc0595f2e0bc595b9ae29e14f77cfc3\";\r\n\r\nasync function getWeather(cityName) {\r\n  const data = await fetch(\r\n    `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APP_ID}`,\r\n    { mode: \"cors\" }\r\n  );\r\n  const weatherData = await data.json();\r\n  console.log(weatherData.weather[0].description);\r\n}\r\n\r\nmodule.exports = {\r\n  getWeather,\r\n};\r\n\n\n//# sourceURL=webpack://12_weatherapp/./src/weather.js?");
+eval("const APP_ID = \"2dc0595f2e0bc595b9ae29e14f77cfc3\";\r\n\r\nasync function getWeather(cityName) {\r\n  const data = await fetch(\r\n    `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APP_ID}&units=metric`,\r\n    { mode: \"cors\" }\r\n  );\r\n  const weatherData = await data.json();\r\n  console.log(weatherData);\r\n}\r\n\r\nmodule.exports = {\r\n  getWeather,\r\n};\r\n\n\n//# sourceURL=webpack://12_weatherapp/./src/weather.js?");
 
 /***/ })
 
