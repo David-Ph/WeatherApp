@@ -1,0 +1,31 @@
+html {
+  background-color: #184e77;
+}
+
+.page-container {
+  /* background-color: #c05299; */
+  border: 5px solid #99d98c;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 2.5em;
+}
+
+.title-container {
+  border-bottom: 3px solid #99d98c;
+  margin-bottom: 2em;
+}
+
+.input-column {
+  margin-bottom: 5em;
+}
+
+.city-name {
+  color: #99d98c;
+}
+
+.city-info {
+  font-weight: 700;
+  border-left: 2px solid #fff;
+  padding-left: 1em;
+}

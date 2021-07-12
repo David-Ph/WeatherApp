@@ -5,8 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherApp</title>
+    <!-- ? GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ? BULMA -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <!-- ? CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="page-container">
+      <div class="columns">
+        <div class="column title-container">
+          <h1 class="title is-1 has-text-white">WeatherApp</h1>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-four-fifths">
+          <input
+            class="input is-success is-rounded"
+            type="text"
+            placeholder="Enter City"
+          />
+        </div>
+        <div class="column">
+          <button class="button is-success is-light is-fullwidth is-rounded">
+            Submit
+          </button>
+        </div>
+      </div>
+      <div class="columns weather-info">
+          <div class="column">
+            <h3 class="title is-2 city-name">Tanjungpinang, Indonesia</h2>
+            <h3 class="title is-4 city-status has-text-white">Mostly Sunny</h2>
+
+            <div class="columns is-mobile">
+              <div class="column is-one-fifth">
+                <h2 class="title is-2 city-degree has-text-white">32 °C</h4>
+              </div>
+              <div class="column">
+                <div class="city-info has-text-white">
+                  <p>FEELS LIKE: 70 °C</p>
+                  <p>WIND: 5 MPH</p>
+                  <p>HUMIDITY: 69</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
