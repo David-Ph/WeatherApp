@@ -5,7 +5,7 @@ async function getWeather(cityName) {
     return;
   }
   const data = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APP_ID}&units=metric`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APP_ID}&units=metric`,
     { mode: "cors" }
   );
   const weatherData = await data.json();
