@@ -3,7 +3,6 @@ html {
 }
 
 .page-container {
-  /* background-color: #c05299; */
   border: 5px solid #99d98c;
   border-radius: 10px;
   max-width: 900px;
@@ -28,4 +27,8 @@ html {
   font-weight: 700;
   border-left: 2px solid #fff;
   padding-left: 1em;
+}
+
+.error {
+  color: red;
 }
